@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="Real G">
+        <h1>YOO whats good!</h1>
+        <h2>Please respond with a wassup :D</h2>
+    </div>
+
+    <div id="Web-App">
+        <input id="inputField" v-model="greeting" placeholder="Greeting">
+        <button id="button" v-on:click="sayWassup(greeting)" class="btn btn-primary">Lets gooo!</button>
+        <div id="outputField" v-if="greeting">{{message}}</div>
+    </div>
+    <script src="Say Wassup!.js"></script>
+</body>
+
+</html>
